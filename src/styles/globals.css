@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Lexend;
+}
+
+input, select, textarea {
+  caret-color: #80ec4d;
+}
+
+input {
+  /* border-width: 2px;
+  border-style: solid; */
+  height: 48px;
+  padding-left: 12px;
+  padding-right: 6px;
+}
+@keyframes fadein {
+  from {opacity: 0; top: -30px;}
+  to {opacity: 1; top: 0px;}
+}
+
+@keyframes fadeout {
+  from {opacity: 1; top: 0px;}
+  to {opacity: 0; top: -30px; display: none;}
+}
+.fade {
+  animation: fadein 0.2s, fadeout 3s 5s forwards;
+}
+
+
+
